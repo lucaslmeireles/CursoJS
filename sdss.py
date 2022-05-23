@@ -1,2 +1,1 @@
-sdds = ' Sdss de um python viu'
-print(sdds)
+print(25/0)
