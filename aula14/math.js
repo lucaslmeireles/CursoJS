@@ -21,3 +21,4 @@ console.log(num1.toFixed(2));  //nao conserta
 console.log(parseFloat(num1.toFixed(2)));
 console.log(Number(num1.toFixed(2)));
 console.log(Number.isInteger(num1));
+
