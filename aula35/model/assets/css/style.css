@@ -1,5 +1,5 @@
 :root{
-    --backgroundcolor:rgb(58, 177, 165);
+    --backgroundcolor:rgb(5, 64, 58);
 }
 
 *{
@@ -20,7 +20,7 @@ body{
     line-height: 1.5em;
     max-width: 640px;
     margin: 50px auto;
-    background: rgb(201, 218, 216);
+    background: rgb(255, 255, 255);
     padding: 20px;
     border-radius: 15px;
     
