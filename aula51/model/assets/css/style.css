@@ -68,3 +68,24 @@ form button:hover{
     height: 40px;
 
 }
+.calculadora{
+    width: 400px
+}
+
+.display{
+    font-size: 2em;
+    width: 100%;
+    text-align: right;
+}
+
+.btn{
+    width: 100%;
+    height: 40px;
+    font-size: 1em;
+    border: none;
+    background-color: #DFDFDF;
+}
+
+.btn:hover{
+    background-color: #6b6b6b;
+}
