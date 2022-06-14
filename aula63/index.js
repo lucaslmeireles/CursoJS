@@ -37,6 +37,7 @@ console.log(p1.nomeCompleto)
 function Pessoa(nome, sobrenome){
     this.nome = nome;
     this.sobrenome = sobrenome;
+   
 }
 
 const p2 = new Pessoa('Lucas', 'Lucio');
