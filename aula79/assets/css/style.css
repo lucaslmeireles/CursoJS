@@ -1,0 +1,77 @@
+:root{
+    --backgroundcolor:rgb(58, 177, 165);
+}
+
+*{
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--backgroundcolor);
+
+}
+
+.container{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    max-width: 640px;
+    margin: 50px auto;
+    background: rgb(201, 218, 216);
+    padding: 20px;
+    border-radius: 15px;
+    
+}
+.tabela{
+    display: grid;
+}
+
+form input, form label, form button{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+form input{
+    font-size: 24px;
+    height: 35px;
+    padding: 0 25px;
+    border: none;
+}
+
+form input:focus{
+    outline: 1px solid var(--backgroundcolor);
+}
+
+form button{
+    background: var(--backgroundcolor);
+    margin-top: 50px;
+    height: 40px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 15px;
+}
+form button:hover{
+    border: 1px solid var(--backgroundcolor);
+    background-color: rgb(14, 105, 96);
+    
+}
+#resultado{
+    border-radius: 15px;
+    text-align: center;
+    font-size: 24px;
+    border: none;
+    font-weight: 600;
+    height: 40px;
+
+}
+
+.error-text{
+    color: red;
+    font-size: 14px;
+}

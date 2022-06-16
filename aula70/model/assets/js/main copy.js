@@ -10,9 +10,6 @@ reduce
 */
 
 
-const resultado = document.querySelector('#resultado');
-const cpf = document.querySelector('#cpf');
-
 function limpaCpf(){
     const cpfLimpo = cpf.value.replace(/\D+/g, '');
     return cpfLimpo;
@@ -25,16 +22,13 @@ function cpfEmArray() {
     const cpfMultiplicado = cpfArray.map(function(valor, index, array){
         return valor = Number(valor) * (wichDigit(array) - index);
     });
-    const soma = cpfMultiplicado.reduce((ac, valor) => valor + ac , 0)
+    let regressivo = cpfArray.length + 1
+    const soma = cpfMultiplicado.reduce((ac, valor) => {
+    ac += Number(valor) * regressivo }, 0)
 
     return console.log(cpfMultiplicado, soma);
 
-function wichDigit(array){
-    if(array.length > 9){
-        return 11;
-    }
-    return 10;
-}
+
 }
 
 function verificaCpf(){
@@ -42,9 +36,6 @@ function verificaCpf(){
     cpfEmArray();
 }
 
-document.addEventListener('submit', function (e) {
-    e.preventDefault();
-    verificaCpf();
-})
+verificaCpf();
 
 
